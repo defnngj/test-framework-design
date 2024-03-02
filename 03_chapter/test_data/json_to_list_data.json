@@ -1,0 +1,7 @@
+{
+    "login": [
+        {"scene": "username_is_null", "username": "", "password": "123"},
+        {"scene": "password_is_null", "username": "user", "password": ""},
+        {"scene": "login_success", "username": "user", "password": "123"}
+    ]
+}
