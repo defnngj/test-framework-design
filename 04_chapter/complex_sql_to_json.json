@@ -1,0 +1,23 @@
+{
+  "id": 146,
+  "creator": 9002257,
+  "reviser": 9002257,
+  "createTime": "2021-12-05 17:16:55",
+  "shippingFee": 0,
+  "totalAmount": 629,
+  "sumProductPayment": 629,
+  "currency": "RMB",
+  "toFullName": "张三",
+  "toAddress": "湖北省武汉市",
+  "toFullAddress": "湖北省武汉市洪山区街道口",
+  "storageName": "初始仓库",
+  "orderTime": "2021-12-05 17:16:55",
+  "isSplit": 0,
+  "packageNum": "1/1",
+  "stockOutCreateTime": "2021-12-05 17:16:56",
+  "stockOutToFullName": "张三",
+  "stockOutToFullAddress": "湖北省武汉市洪山区街道口",
+  "creatorName": "账号联系人",
+  "stockOutId": "1467422726779043840",
+  "orderId": "1467422722362441728"
+}
