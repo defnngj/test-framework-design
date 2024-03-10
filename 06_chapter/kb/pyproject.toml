@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "kb"
+version = "0.1.0"
+description = ""
+authors = ["defnngj <defnngj@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.scripts]
+kb = "kb.cli:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
