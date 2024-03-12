@@ -1,0 +1,5 @@
+2024-03-13 00:26:51 loguru_demo2.py | DEBUG | this is debug!
+2024-03-13 00:26:51 loguru_demo2.py | INFO | this is info!
+2024-03-13 00:26:51 loguru_demo2.py | WARNING | this is warning!
+2024-03-13 00:26:51 loguru_demo2.py | ERROR | this is error!
+2024-03-13 00:26:51 loguru_demo2.py | SUCCESS | this is success!
