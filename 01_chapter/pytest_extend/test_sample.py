@@ -1,10 +1,14 @@
+"""
+pytest扩展方式
+"""
 import pytest
 
 
-# 调用钩子函数hello
-def test_hello(hello):
-    print(f"hello: {hello}")
-    assert hello == "hello 虫师"
+# 调用钩子函数 name()
+def test_hello(name):
+    greetings = f"hello {name}"
+    print(greetings)
+    assert greetings == "hello 虫师"
 
 
 # 使用装饰器
@@ -20,7 +24,7 @@ def test_add(a, b):
     assert a + 1 == b
 
 
-# 使用命令行参数
+# 使用命令行参数 base_url
 def test_cmd(base_url):
     print(f"base_url: {base_url}")
     assert "http" in base_url

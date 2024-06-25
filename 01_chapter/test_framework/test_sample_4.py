@@ -5,4 +5,4 @@ pytest例子
 
 
 def test_answer():
-    assert 3+1 == 5
+    assert 3 + 1 == 5

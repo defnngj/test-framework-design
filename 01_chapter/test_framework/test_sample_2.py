@@ -20,7 +20,7 @@ class HelloTest(TestCase):
         """
         self.start_step("第一个测试步骤")
         self.log_info("hello")
-        self.assert_("检查计算结果", 2+2 == 4)
+        self.assert_("检查计算结果", 2 + 2 == 4)
 
 
 if __name__ == '__main__':

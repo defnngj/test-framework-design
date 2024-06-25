@@ -2,5 +2,5 @@ import pytest
 
 
 @pytest.fixture
-def hello():
-    return "hello 虫师"
+def name():
+    return "虫师"
