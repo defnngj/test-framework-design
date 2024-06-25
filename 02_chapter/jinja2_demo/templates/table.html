@@ -2,18 +2,17 @@
 <body>
 <h1> case list: </h1>
 <table border="1">
-    <tr>
-        <th>name</th>
-        <th>doc</th>
-    </tr>
+  <tr>
+    <th>name</th>
+    <th>doc</th>
+  </tr>
 
-    {% for item in cases %}
-    <tr>
-        <td>{{ item.name }}</td>
-        <td>{{ item.doc }}</td>
-    </tr>
-    {% endfor %}
-
+  {% for item in cases %}
+  <tr>
+    <td>{{ item.name }}</td>
+    <td>{{ item.doc }}</td>
+  </tr>
+  {% endfor %}
 </table>
 </body>
 </html>

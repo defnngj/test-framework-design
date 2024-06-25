@@ -1,9 +1,10 @@
-import os
-import json
 import datetime
-from jsonrunner.result import _TestResult
+import json
+import os
+
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
+from jsonrunner.result import _TestResult
 
 # template模板目录
 PATH_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -16,7 +17,6 @@ env = Environment(
 
 # 指定 table.html 文件
 template = env.get_template("report.html")
-
 
 # 定义用例类型
 case_type = {
@@ -43,15 +43,13 @@ class JSONTestRunner:
         """
         result = _TestResult(self.verbosity)
         test(result)
-        stop_time = datetime.datetime.now()
         case_info = self.test_result(result)
-        with open(self.output, "w", encoding="utf-8") as json_file:
-            json.dump(case_info, json_file)
 
-        # 测试结果转HTML
-        self.result_to_html(case_info)
+        # 测试结果转报告
+        self.result_to_report(case_info)
 
-        print(f"Time Elapsed: {self.start_time - stop_time}")
+        stop_time = datetime.datetime.now()
+        print(f"Time Elapsed: {stop_time - self.start_time}")
         return result
 
     def test_result(self, result):
@@ -120,7 +118,7 @@ class JSONTestRunner:
         """
         生成测试用例数据
         """
-        tid = (n == 0 and "p" or "f") + f"t{cid +1}.{tid+1}"
+        tid = (n == 0 and "p" or "f") + f"t{cid + 1}.{tid + 1}"
         name = t.id().split('.')[-1]
         doc = t.shortDescription() or ""
 
@@ -134,14 +132,16 @@ class JSONTestRunner:
 
         return case
 
-    def result_to_html(self, result):
+    def result_to_report(self, result):
         """
-        测试结果转HTML
+        测试结果转报告
         """
-        tmp = template.render(class_list=result)
+        # 保存为JSON文件
+        with open(self.output, "w", encoding="utf-8") as json_file:
+            json.dump(result, json_file, ensure_ascii=False, indent=2)
 
-        # 定义HTML文件名
+        # 替换后缀中，保存为HTML文件
         html_file_name = self.output.replace(".json", ".html")
-        # 保存HTML结果
+        tmp = template.render(class_list=result)
         with open(html_file_name, "w", encoding="utf-8") as f:
             f.write(tmp)

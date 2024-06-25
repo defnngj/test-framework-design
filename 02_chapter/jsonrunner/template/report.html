@@ -6,17 +6,20 @@
   <meta charset="utf-8"/>
   <link rel="shortcut icon" href="/start/assets/media/logos/favicon.ico"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"/>
-  <link href="https://preview.keenthemes.com/start/assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css"/>
+  <link href="https://preview.keenthemes.com/start/assets/plugins/global/plugins.bundle.css" rel="stylesheet"
+        type="text/css"/>
   <link href="https://preview.keenthemes.com/start/assets/css/style.bundle.css" rel="stylesheet" type="text/css"/>
 </head>
 <body id="kt_body" data-sidebar="on" class="header-fixed header-tablet-and-mobile-fixed sidebar-enabled">
 <div class="d-flex flex-column flex-root">
   <div class="page d-flex flex-row flex-column-fluid">
-    <div class="wrapper d-flex flex-column flex-row-fluid" id="kt_wrapper">
-      <div id="kt_header" class="header" data-kt-sticky="true" data-kt-sticky-name="header" data-kt-sticky-offset="{default: '200px', lg: '300px'}">
+    <div class="d-flex flex-column flex-row-fluid" id="kt_wrapper">
+      <div id="kt_header" class="header" data-kt-sticky="true" data-kt-sticky-name="header"
+           data-kt-sticky-offset="{default: '200px', lg: '300px'}">
         <div class="container-xxl d-flex align-items-stretch justify-content-between">
           <div class="d-flex align-items-center">
-            <button class="btn btn-icon btn-accent me-2 me-lg-6" id="kt_mega_menu_toggle" data-bs-toggle="modal" data-bs-target="#kt_mega_menu_modal">
+            <button class="btn btn-icon btn-accent me-2 me-lg-6" id="kt_mega_menu_toggle" data-bs-toggle="modal"
+                    data-bs-target="#kt_mega_menu_modal">
               <span class="svg-icon svg-icon-3">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
                   <rect y="6" width="16" height="3" rx="1.5" fill="black"/>
@@ -25,9 +28,9 @@
                 </svg>
               </span>
             </button>
-              <a href="/start/index.html">
-                <h1>HTML 报告模板</h1>
-              </a>
+            <a href="/start/index.html">
+              <h1>HTML 报告模板</h1>
+            </a>
           </div>
         </div>
       </div>
@@ -38,55 +41,55 @@
               <div class="col-xl-20">
                 <div class="card card-stretch mb-5 mb-xxl-8">
                   <div class="card-header border-0 pt-5">
-                      <h3 class="card-title align-items-start flex-column">
-                          <span class="card-label fw-bolder text-dark fs-3">Test Result</span>
-                      </h3>
+                    <h3 class="card-title align-items-start flex-column">
+                      <span class="card-label fw-bolder text-dark fs-3">Test Result</span>
+                    </h3>
                   </div>
+
                   <div class="card-body pt-2 pb-0 mt-n3">
                     <div class="tab-content mt-5" id="myTabTables1">
-<div class="tab-pane fade show active" id="kt_tab_pane_1_1" role="tabpanel" aria-labelledby="kt_tab_pane_1_1">
-  
-  {% for class in class_list %}
-  <div class="table-responsive">
-    <table class="table table-borderless align-middle">
-        <thead>
-        <tr>
-          <th class="p-0 fw-bolder min-w-100px">{{ class.name }}</th>
-          <th class="p-0 fw-bolder min-w-200px">{{ class.desc }}</th>
-          <th class="p-0 fw-bolder min-w-40px">{{ class.count }}</th>
-          <th class="p-0 fw-bolder min-w-40px">{{ class.pass }}</th>
-          <th class="p-0 fw-bolder min-w-40px">{{ class.fail }}</th>
-          <th class="p-0 fw-bolder min-w-40px">{{ class.error }}</th>
-          <th class="p-0 fw-bolder min-w-40px">{{ class.skipped }}
-          </th>
-        </tr>
-        </thead>
-        <tbody>
-        {% for case in class.cases %}
-        <tr>
-          <td class="ps-0">
-              <span class="text-dark me-2 fs-6">{{ case.number }}</span>
-          </td>
-          <td class="ps-0">
-              <span class="text-dark me-2 fs-6">{{ case.name }}</span>
-          </td>
-          <td class="ps-0">
-              <span class="text-dark me-2 fs-6">{{ case.doc }}</span>
-          </td>
-          <td class="ps-0">
-              <span class="text-dark me-2 fs-6">{{ case.result }}</span>
-          </td>
-          <td class="ps-0">
-              <span class="text-dark me-2 fs-6">{{ case.error }}</span>
-          </td>
-        </tr>
-        {% endfor %}
-        </tbody>
-    </table>
-  </div>
-  {% endfor %}
-
-</div>
+                      <div class="tab-pane fade show active" id="kt_tab_pane_1_1" role="tabpanel"
+                           aria-labelledby="kt_tab_pane_1_1">
+                        {% for class in class_list %}
+                        <div class="table-responsive">
+                          <table class="table table-borderless align-middle">
+                            <thead>
+                            <tr>
+                              <th class="p-0 fw-bolder min-w-100px">{{ class.name }}</th>
+                              <th class="p-0 fw-bolder min-w-200px">{{ class.desc }}</th>
+                              <th class="p-0 fw-bolder min-w-40px">{{ class.count }}</th>
+                              <th class="p-0 fw-bolder min-w-40px">{{ class.pass }}</th>
+                              <th class="p-0 fw-bolder min-w-40px">{{ class.fail }}</th>
+                              <th class="p-0 fw-bolder min-w-40px">{{ class.error }}</th>
+                              <th class="p-0 fw-bolder min-w-40px">{{ class.skipped }}
+                              </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% for case in class.cases %}
+                            <tr>
+                              <td class="ps-0">
+                                <span class="text-dark me-2 fs-6">{{ case.number }}</span>
+                              </td>
+                              <td class="ps-0">
+                                <span class="text-dark me-2 fs-6">{{ case.name }}</span>
+                              </td>
+                              <td class="ps-0">
+                                <span class="text-dark me-2 fs-6">{{ case.doc }}</span>
+                              </td>
+                              <td class="ps-0">
+                                <span class="text-dark me-2 fs-6">{{ case.result }}</span>
+                              </td>
+                              <td class="ps-0">
+                                <span class="text-dark me-2 fs-6">{{ case.error }}</span>
+                              </td>
+                            </tr>
+                            {% endfor %}
+                            </tbody>
+                          </table>
+                        </div>
+                        {% endfor %}
+                      </div>
                     </div>
                   </div>
                 </div>
