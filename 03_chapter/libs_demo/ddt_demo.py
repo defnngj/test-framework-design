@@ -1,5 +1,6 @@
 # ddt_demo.py
 import unittest
+
 from ddt import ddt, data, unpack
 
 
@@ -9,7 +10,7 @@ class TestDTT(unittest.TestCase):
     @data([1, 2, 3], [4, 5, 9], [6, 7, 13])
     @unpack
     def test_add_list(self, a, b, c):
-        self.assertEqual(a+b, c)
+        self.assertEqual(a + b, c)
 
     @data(("Hi", "HI"), ("hello", "HELLO"), ("world", "WORLD"))
     @unpack

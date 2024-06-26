@@ -1,5 +1,6 @@
 # ddt_demo2.py
 import unittest
+
 from ddt import ddt, file_data
 
 

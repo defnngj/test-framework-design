@@ -1,10 +1,12 @@
-import os
-import json
-import yaml
-import csv
 import codecs
+import csv
+import json
+import os
 from itertools import islice
+
+import yaml
 from openpyxl import load_workbook
+
 from extend.parameterized_extend import check_data
 from extend.parameterized_extend import data
 
@@ -12,7 +14,6 @@ from extend.parameterized_extend import data
 def file_data(file: str, line: int = 1, sheet: str = "Sheet1", key: str = None):
     """
     支持文件转参数化.
-
     :param file: 文件名
     :param line:  Excel/CSV 文件指定第几行开始读取
     :param sheet: Excel文件标签页名
