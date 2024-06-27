@@ -1,7 +1,8 @@
 # hypothesis_demo.py
 import unittest
-from hypothesis import given, settings
+
 import hypothesis.strategies as st
+from hypothesis import given, settings
 
 
 def add(a: int, b: int):

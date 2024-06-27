@@ -1,7 +1,8 @@
-import re
-import random
-import time
 import datetime
+import random
+import re
+import time
+
 import requests
 
 # 移动号段
@@ -62,7 +63,7 @@ def first_name(gender: str = "") -> str:
     elif gender == "m":
         return random.choice(zh_names_male)
     else:
-        return  random.choice(zh_names_female)
+        return random.choice(zh_names_female)
 
 
 def last_name() -> str:
@@ -81,6 +82,7 @@ def name() -> str:
 
 
 TAOBAO_TIME = "http://api.m.taobao.com/rest/api3.do?api=mtop.common.getTimestamp"
+
 
 def online_timestamp() -> str:
     """

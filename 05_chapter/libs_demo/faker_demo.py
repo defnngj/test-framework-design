@@ -20,8 +20,8 @@ day_of_month = fake.day_of_month()
 day_of_week = fake.day_of_week()
 date = fake.date(pattern="%Y-%m-%d")
 date_between = fake.date_between(start_date="-30y", end_date="today")
-future_datetime = fake.future_datetime(end_date="+30d",)
-past_datetime = fake.past_datetime(start_date="-30d", )
+future_datetime = fake.future_datetime(end_date="+30d")
+past_datetime = fake.past_datetime(start_date="-30d")
 
 print(f"""
     day_of_month: {day_of_month},
