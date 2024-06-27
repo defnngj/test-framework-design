@@ -1,5 +1,6 @@
-# tools/autotest.py
+# tools/scaffolding.py
 import os
+
 import click
 
 
@@ -47,6 +48,7 @@ def create_scaffold(project_name: str) -> None:
         msg = f"created file: {path}"
         print(msg)
 
+    # 测试用例模板
     test_sample = '''import unittest
 
 
@@ -61,6 +63,7 @@ if __name__ == '__main__':
 
 '''
 
+    # 运行测试脚本
     run = '''import unittest
 
 suit = unittest.defaultTestLoader.discover("test_dir", "test_*.py")

@@ -1,12 +1,16 @@
 [tool.poetry]
 name = "kb"
 version = "0.1.0"
-description = ""
+description = "kb is a simple performance testing tool"
 authors = ["defnngj <defnngj@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
+requests = "^2.32.3"
+gevent = "^24.2.1"
+numpy = "^2.0.0"
+tqdm = "^4.66.4"
 
 [tool.poetry.scripts]
 kb = "kb.cli:main"
@@ -14,3 +18,8 @@ kb = "kb.cli:main"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "mirrors"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple/"
+default = true

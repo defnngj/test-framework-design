@@ -6,7 +6,7 @@ import click
 @click.option("-c", "--count", default=1, help="执行次数，默认1。")
 @click.option("-n", "--name", prompt="Your name", help="请输入name名字。")
 def hello(count, name):
-    """简单的程序，问候 count 次 name."""
+    """简单的CLI，问候 count 次 name."""
     for _ in range(count):
         click.echo(f"Hello, {name}!")
 

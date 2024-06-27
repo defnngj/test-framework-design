@@ -1,6 +1,7 @@
 # tools/kb.py
 import gevent
 from gevent import monkey
+
 monkey.patch_all()
 import time
 import click
@@ -38,6 +39,7 @@ def running(url, request):
 @click.option('-u', '--user', default=1, help='运行用户的数量，默认 1', type=int)
 @click.option('-q', '--request', default=1, help='单个用户请求数，默认 1', type=int)
 def main(url, user, request):
+    """请指定请求的URL"""
     print(f"请求URL: {url}")
     print(f"用户数：{user}，循环次数: {request}")
     print("============== Running ===================")

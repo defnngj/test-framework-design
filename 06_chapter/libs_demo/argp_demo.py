@@ -1,7 +1,6 @@
 # argp_demo.py
 import argparse
 
-
 parser = argparse.ArgumentParser(description='argparse 简单用法')
 
 parser.add_argument('-n', '--name', type=str, default="tom", help="请输入name名字，默认 tom")
