@@ -1,3 +1,4 @@
+# se_api_three.py
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
@@ -36,4 +37,3 @@ def wirte(elem, text):
 
 def click(elem):
     elem.click()
-

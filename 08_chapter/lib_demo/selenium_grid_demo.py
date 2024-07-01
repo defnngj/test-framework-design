@@ -1,4 +1,4 @@
-# docker_grid_demo.py
+# selenium_grid_demo.py
 from selenium import webdriver
 from selenium.webdriver import Remote
 
