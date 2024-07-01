@@ -1,11 +1,14 @@
+# test_appium_lab.py
 from time import sleep
+
+from appium.options.android import UiAutomator2Options
 from appium.webdriver import Remote
 from appium.webdriver.common.appiumby import AppiumBy
-from appium.options.android import UiAutomator2Options
-from appium_lab.switch import Switch
+
 from appium_lab.action import Action
 from appium_lab.find import FindByText
 from appium_lab.keyevent import KeyEvent
+from appium_lab.switch import Switch
 
 capabilities = {
     "automationName": "UiAutomator2",

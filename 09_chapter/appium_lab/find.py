@@ -1,6 +1,8 @@
 # appium_lab/find.py
 from time import sleep
+
 from appium.webdriver.common.appiumby import AppiumBy
+
 from appium_lab.switch import Switch
 
 
@@ -15,7 +17,6 @@ class FindByText(Switch):
         :param class_name: class名字
         :param attribute: 属性
         :param text: 文本
-        :return:
         """
         elems = self.driver.find_elements(AppiumBy.CLASS_NAME, class_name)
         for _ in range(3):
@@ -36,7 +37,6 @@ class FindByText(Switch):
         """
         Android: 基于TextView查找文本
         :param text: 文本名
-        :return:
         """
         self.switch_to_app()
         for _ in range(3):
