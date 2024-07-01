@@ -1,3 +1,4 @@
+# loguru_demo.py
 from loguru import logger
 
 logger.debug("this is debug!")

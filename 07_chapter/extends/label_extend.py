@@ -14,7 +14,9 @@ def label(*labels):
     """
 
     def inner(cls):
-        # 类/方法添加标签
+        """
+        类/方法添加标签
+        """
         cls._labels = set(labels) | getattr(cls, '_labels', set())
         return cls
 

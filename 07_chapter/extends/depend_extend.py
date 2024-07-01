@@ -5,8 +5,8 @@ from unittest import skipIf
 
 def depend(case=None):
     """
-    Use case dependency
-    :param case
+    用例依赖装饰器
+    :param case: 依赖用例名称
     :return:
     """
 
@@ -33,8 +33,8 @@ def depend(case=None):
 
 def if_depend(value):
     """
-    Custom skip condition
-    :param value
+    根据条件跳过当前用例
+    :param value: 变量的值
     :return:
     """
 

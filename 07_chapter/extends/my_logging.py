@@ -1,4 +1,4 @@
-# sys_logging.py
+# extends/my_logging.py
 import logging
 from logging import FileHandler
 from logging import StreamHandler

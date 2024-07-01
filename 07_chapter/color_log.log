@@ -1,5 +1,0 @@
-[2024-03-13 00:21:50,673] __main__ - DEBUG - [36mthis is debug[0m
-[2024-03-13 00:21:50,673] __main__ - INFO - [32mthis is info[0m
-[2024-03-13 00:21:50,674] __main__ - WARNING - [33mthis is warning[0m
-[2024-03-13 00:21:50,674] __main__ - ERROR - [31mthis is error[0m
-[2024-03-13 00:21:50,675] __main__ - CRITICAL - [34mthis is critical[0m

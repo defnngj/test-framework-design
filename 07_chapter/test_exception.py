@@ -1,9 +1,9 @@
 from extends.exception import AgeError, HeightError, WeightError
 
 class_student = {
-    "小红": {"age": 11,"height": 135,"weight": 54},
-    "小明": {"age": 12,"height": 142,"weight": 60},
-    "小刚": {"age": 12,"height": 143,"weight": 200}
+    "小红": {"age": 11, "height": 135, "weight": 54},
+    "小明": {"age": 12, "height": 142, "weight": 60},
+    "小刚": {"age": 12, "height": 143, "weight": 200}
 }
 
 
