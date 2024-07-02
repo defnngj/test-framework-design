@@ -1,21 +1,24 @@
-from typing import Callable, Text, Tuple
 from functools import wraps
+from typing import Callable, Text
+
 import redis
 from loguru import logger
 
 redis_client = redis.Redis(host='localhost', port=6379, db=0)
 
+
 def dependent_func(func_obj: Callable, key_name: Text = None, *out_args, **out_kwargs):
     """
     依赖方法装饰器
 
-    :param func_obj: 方法对象.
+    :param func_obj: 方法对象
     :param key_name: 关键名
     :param out_args:
     :param out_kwargs:
     :return:
     """
     global redis_client
+
     def decorator(func):
         @wraps(func)
         def wrapper(*args, **kwargs):
@@ -27,7 +30,7 @@ def dependent_func(func_obj: Callable, key_name: Text = None, *out_args, **out_k
                 key = depend_func_name
 
             if not redis_client.get(key):
-                dependence_res = _call_dependence(func_obj, func_name,*out_args, **out_kwargs)
+                dependence_res = _call_dependence(func_obj, func_name, *out_args, **out_kwargs)
                 redis_client.set(key, dependence_res)
 
             else:

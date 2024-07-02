@@ -1,6 +1,6 @@
 import requests
 
-from tools.extend import check_response
+from tools.response import check_response
 
 
 @check_response(
@@ -15,15 +15,12 @@ def get_token(username, password):
     :param username:
     :param password:
     """
-
     url = "http://httpbin.org/post"
-
     data = {
         "username": username,
         "password": password,
         "token": "token123"
     }
-
     r = requests.post(url, data=data)
     return r
 

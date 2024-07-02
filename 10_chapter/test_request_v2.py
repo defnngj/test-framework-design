@@ -22,6 +22,7 @@ class MyHttpTest(case.TestCase):
             ]
         }
 
+        self.post("http://httpbin.org/post", json=params)
         self.assertPath("json.user_list[0].id", 1)
         self.assertPath("json.user_list[0].name", "tom")
         self.assertPath("json.user_list[0].hobby[0]", "basketball")

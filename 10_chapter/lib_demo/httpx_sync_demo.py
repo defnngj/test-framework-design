@@ -1,4 +1,4 @@
-# httpx_sync.py
+# httpx_sync_demo.py
 import httpx
 
 r = httpx.get('https://www.example.org/')

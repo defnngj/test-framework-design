@@ -1,5 +1,4 @@
 import json
-import time
 
 from jmespath import search
 from loguru import logger
@@ -64,20 +63,3 @@ def check_response(
         return wrapper
 
     return decorator
-
-
-def timer(func):
-    """
-    计时器装饰器
-    :param func:
-    :return:
-    """
-
-    def wrapper(*args, **kwargs):
-        start_time = time.time()
-        result = func(*args, **kwargs)
-        end_time = time.time()
-        logger.info(f"{func.__name__} executed in {end_time - start_time:.3f}s")
-        return result
-
-    return wrapper
