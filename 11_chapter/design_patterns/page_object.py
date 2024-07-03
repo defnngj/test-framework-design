@@ -1,5 +1,4 @@
 # page_object.py
-from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webdriver import WebDriver
 
 
@@ -10,8 +9,8 @@ class BingPage:
 
     @property
     def search_input(self):
-        return self.driver.find_element(By.ID, "sb_form_q")
+        return self.driver.find_element("id", "sb_form_q")
 
     @property
     def search_icon(self):
-        return self.driver.find_element(By.ID, "search_icon")
+        return self.driver.find_element("id", "search_icon")

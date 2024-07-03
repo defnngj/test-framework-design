@@ -10,7 +10,7 @@ class BingPage(Page):
 
 
 class CalculatorPage(Page):
-    """Android(华为) 默认计算器"""
+    """手机默认自带计算器"""
     number_1 = Element(id_="com.huawei.calculator:id/digit_1")
     number_2 = Element(id_="com.huawei.calculator:id/digit_2")
     add = Element(id_="com.huawei.calculator:id/op_add")
