@@ -7,11 +7,11 @@ class TestSample(unittest.TestCase):
 
     def test_case_01(self):
         """test case 01"""
-        self.assertEqual(1+1, 2)
+        self.assertEqual(1 + 1, 2)
 
     def test_case_02(self):
         """test case 02"""
-        self.assertEqual(2+2, 4)
+        self.assertEqual(2 + 2, 4)
 
 
 if __name__ == '__main__':

@@ -7,7 +7,7 @@ class TestSubDirCase(unittest.TestCase):
 
     def test_sub_case(self):
         """test sub dir case"""
-        self.assertEqual(4+4, 8)
+        self.assertEqual(4 + 4, 8)
 
 
 if __name__ == '__main__':
