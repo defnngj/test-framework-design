@@ -16,8 +16,8 @@ logger.add(sys.stderr, format=log_format, level="DEBUG")
 # log 文件配置
 logger.add(f"file_{time.time()}.log", rotation="12:00", format=log_format)
 
-logger.debug("this is debug!")
-logger.info("this is info!")
-logger.warning("this is warning!")
-logger.error("this is error!")
-logger.success("this is success!")
+logger.debug("this is a debug!")
+logger.info("this is a info!")
+logger.warning("this is a warning!")
+logger.error("this is a error!")
+logger.success("this is a success!")
