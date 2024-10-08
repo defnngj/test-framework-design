@@ -3,8 +3,8 @@ import logging
 
 logging.basicConfig(level=logging.DEBUG)
 
-logging.debug("this is debug")
-logging.info("this is info")
-logging.warning("this is warning")
-logging.error("this is error")
-logging.critical("this is critical")
+logging.debug("this is a debug")
+logging.info("this is a info")
+logging.warning("this is a  warning")
+logging.error("this is a error")
+logging.critical("this is a critical")
