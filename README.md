@@ -7,6 +7,8 @@
 
 天猫 [购买链接](https://detail.tmall.com/item.htm?id=852715481274&skuId=5817727406269)
 
+当当 [购买链接](https://product.dangdang.com/29809610.html)
+
 ## 相关文章
 
 🗎 [《一文搞懂如何设计自动化测试框架》](./article/test_framework.md)
