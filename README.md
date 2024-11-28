@@ -11,7 +11,9 @@
 
 ## 相关文章
 
-🗎 [《一文搞懂如何设计自动化测试框架》](./article/test_framework.md)
+🗎 [《一文搞懂自动化测试框架设计》](./article/test_framework.md)
+
+📺[《40分钟理解自动化测试框架设计》](https://www.bilibili.com/video/BV156UXYTEf4/?spm_id_from=333.999.0.0)
 
 ## 书中介绍的项目地址或网站
 
